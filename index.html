@@ -1,0 +1,248 @@
+<style>
+
+
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+body{
+  text-align-last: center;text-align: -webkit-center;
+  width: 100% !important;
+}
+
+.b-login-form .submit-button, .b-login-form-extended .submit-button {
+    background: #e31a4d !important;
+    border-radius: 20px !important;
+}
+
+
+.b-login-form .submit-button:hover, .b-login-form-extended .submit-button:hover {
+  background: #e31b4c !important;
+  box-shadow: 1px 1px 2px 1px #565656;
+}
+
+.b-login-form .submit-button:active, .b-login-form-extended .submit-button:active {
+  background: #a70000!important;
+}
+
+.login-form input {
+  border: 1px solid rgb(0 0 0 / 75%) ;
+  border-radius: 9px !important; 
+}
+
+.login-form label {
+  color: #000000 !important;
+  left: 5px !important; 
+}
+
+@media (min-width: 576px) and (max-width:992px) {
+#desktop-top {
+    max-width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    left: 0%;
+    margin: 0px;
+    padding: 0px;
+}
+#desktop-top-2{
+  border-top-left-radius: 25px;    border-top-right-radius: 25px;
+      box-shadow: 0px 0px 20px 4px #bfbfbf;
+      padding-bottom: 10px; height: 560px;background: white;
+}
+}
+
+@media (min-width: 992px) {
+#desktop-top {
+    max-width: 290px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    left: 0%;
+    margin: 0px;
+    padding: 0px;
+}
+#desktop-top-2{
+  border-top-left-radius: 25px;    border-bottom-left-radius: 25px;
+      box-shadow: 0px 0px 20px 4px #bfbfbf;
+      padding-bottom: 10px; height: 560px;background: white;
+}
+}
+
+@media (min-width: 576px) and (max-width:992px) {
+#desktop-bot {
+    background-image: url(bg_2.jpg);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 25px;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 0px 20px 4px #bfbfbf;
+}
+}
+
+@media (min-width: 992px) {
+#desktop-bot {
+    background-image: url(bg_2.jpg);
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 25px;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 0px 20px 4px #bfbfbf;
+}
+}
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div id="tsparticles"><canvas class="tsparticles-canvas-el" width="2880" height="2220" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255);"></canvas></div>
+<div class="container" style="/* margin: 43px; */padding-top: 50px;">
+<div class="row "  style="/* position: relative; *//* top: 25%; *//* width: 100%; */justify-content: center;">
+  <div class="b-login-form col-lg-6 col-sm-12  " id="desktop-top">
+      <div class="b-login-form__padder" id="desktop-top-2" >
+          <div class="b-logo" style="margin: 0px;">
+              <img src="icetech.png" style="max-width: 200px;">
+          </div>
+          <form:form id="login-form" $formParams class="login-form">
+              $login
+              $password
+              <div>$submit</div>
+              $customLink
+          </form:form>
+          <p class="b-login-form__footer-text">$about $copyright</p>
+      </div>
+  </div>
+  <div class="col-lg-6 col-sm-12 " id="desktop-bot" >
+    <h3 style="text-shadow:1px 1px 4px #000000;">Уважаемые сотрудники ГК «Айсберри»!</h3>
+    <p style="text-shadow:1px 1px 4px #000000;font-size: large;">Департамент ИТ и ЦТ предлагает выстраивать коммуникации по вопросам поддержки и развития ИТ по следующим каналам:
+    </p>
+      <p style="text-align: left;text-align-last: left; text-shadow:1px 1px 4px #000000; font-size: large;">
+      Основной канал – портал http://iceberry.help<br>
+      Единый E-Mail: <img src="email.png" style="max-width: 210px; filter: drop-shadow(1px 1px 2px black);"><br>
+      Для критичных инцидентов, влияющих на остановку Склада, Производства, Продаж:<br>
+      Городской телефон:    +7 (495) 374-79-34<br>
+      Мобильный телефон :+7 (916) 574-79-34<br>
+      Вы можете установить мобильное приложение для своих устройств из Google Play и AppStore<br>
+      </p>
+      <a href="https://play.google.com/store/apps/details?id=ru.naumen.sdmobile&hl=en"><img src="play.png" style="max-height: 80px; padding: 15px;"></a><a href="https://apps.apple.com/ru/app/naumen-service-desk-itsm-365/id1004959933"><img src="app.png" style="max-height: 80px; padding: 15px;"></a>
+  </div>
+</div>
+
+
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.17.12/tsparticles.min.js'></script>
+<script>
+  tsParticles.load("tsparticles", {
+fps_limit: 30,
+background: {
+color: "#ffffff"
+},
+interactivity: {
+detectsOn: "window",
+events: {
+  onHover: {
+    enable: true,
+    mode: "grab"
+  },
+  onClick: {
+    enable: true,
+    mode: "push"
+  },
+  resize: true
+},
+modes: {
+  grab: {
+    distance: 150,
+    links: {
+      opacity: 1
+    }
+  },
+  bubble: {
+    distance: 400,
+    size: 40,
+    duration: 2,
+    opacity: 0.8
+  },
+  repulse: {
+    distance: 200
+  },
+  push: {
+    quantity: 4
+  },
+  remove: {
+    quantity: 2
+  }
+}
+},
+particles: {
+rotate: {
+  animation: {
+    enable: true,
+    speed: 5,
+    sync: false
+  },
+  direction: "clockwise",
+  path: false,
+  random: true,
+  value: 360
+},
+color: {
+  value: ["#e31b4c"]
+},
+links: {
+  color: "#e31b4c",
+  distance: 200,
+  enable: true,
+  opacity: 0.4,
+  width: 1
+},
+move: {
+  collisions: false,
+  direction: "none",
+  enable: true,
+  out_mode: "bounce",
+  random: false,
+  speed: 2,
+  straight: false
+},
+number: { density: { enable: true, value_area: 800 }, value: 100 },
+opacity: {
+  animation: { enable: true, minimumValue: 0.5, speed: 1, sync: false },
+  random: true,
+  value: 1
+},
+
+shape:{
+  type:"images",
+  image: {
+    src: "snowflake.png",
+    width: 40,
+    height: 40
+  }
+},
+size: {
+  animation: {
+    enable: true,
+    minimumValue: 2,
+    speed: 1,
+    sync: false
+  },
+  random: {
+    enable: true,
+    minimumValue: 2
+  },
+  value: 15
+}
+},
+retina_detect: true
+});
+</script>
