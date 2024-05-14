@@ -112,13 +112,17 @@ body{
           <div class="b-logo" style="margin: 0px;">
               <img src="icetech.png" style="max-width: 200px;">
           </div>
-          <form:form id="login-form" $formParams class="login-form">
-              $login
-              $password
-              <div>$submit</div>
-              $customLink
-          </form:form>
-          <p class="b-login-form__footer-text">$about $copyright</p>
+          <form id="login-form" class="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
   </div>
   <div class="col-lg-6 col-sm-12 " id="desktop-bot" >
